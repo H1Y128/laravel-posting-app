@@ -18,8 +18,8 @@ class PostFactory extends Factory
     {
         return [
             'user_id' => 2,
-            'title' => fake()->title(),
-            'content' => fake()->realText()
+            'title' => fake()->realText(32, 5),
+            'content' => fake()->realText(200, 5)
         ];
     }
 }
